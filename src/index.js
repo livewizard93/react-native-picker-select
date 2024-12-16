@@ -433,6 +433,7 @@ export default class RNPickerSelect extends PureComponent {
           value={selectedItem.inputLabel ? selectedItem.inputLabel : selectedItem.label}
           ref={this.setInputRef}
           editable={false}
+          pointerEvents='none'
           {...textInputProps}
         />
         {this.renderIcon()}
